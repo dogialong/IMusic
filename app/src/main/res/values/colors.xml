@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="label_selected">#0380fe</color>
+    <color name="label_pressed">#0380fe</color>
+    <color name="label_normal">#6a7980</color>
+    <color name="header_selector">#CCCCCC</color>
+
+    <color name="primary_color">#9C27B0</color>
+    <color name="head_number_color">#99727272</color>
+    <color name="side_bar_color">#999E9E9E</color>
+    <color name="color_text">#EEEEEE</color>
+
+</resources>

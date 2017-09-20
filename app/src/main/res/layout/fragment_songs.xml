@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="serif-monospace"
+            android:gravity="center_vertical"
+            android:text="SETTING"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:fontFamily="serif-monospace"
+            android:gravity="center_vertical"
+            android:text="ALL SONGS"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/layout_playing_tab_song"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="serif-monospace"
+                android:gravity="center"
+                android:text="PLAYING"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:src="@mipmap/ic_playing" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <include layout="@layout/search_layout"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/shuffeWrap"
+            android:layout_marginRight="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:textColor="@android:color/black"
+                android:gravity="center_vertical"
+                android:text="@string/shuffle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:id="@+id/shuffle"
+                android:background="@drawable/ic_shuffle"
+                android:layout_marginRight="20dp"
+                android:layout_centerInParent="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="30dp"
+                android:layout_height="20dp" />
+        </RelativeLayout>
+        <se.emilsjolander.stickylistheaders.ExpandableStickyListHeadersListView
+            android:id="@+id/list"
+            android:layout_below="@id/shuffeWrap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:drawSelectorOnTop="true"
+            android:fastScrollEnabled="true"
+            android:layout_marginRight="30dp"
+            android:overScrollMode="never"
+            android:scrollbarStyle="outsideOverlay" />
+        <TextView
+            android:id="@+id/dialog"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/head_number_bg"
+            android:gravity="center"
+            android:textColor="@color/primary_color"
+            android:textSize="30sp"
+            android:visibility="gone"
+            />
+        <com.skay.imusic.customview.SideBar
+            android:background="@android:color/transparent"
+            android:id="@+id/sideBar"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>
